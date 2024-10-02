@@ -1,9 +1,11 @@
 'use client'
+
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'framer-motion'
 import { FaDumbbell } from 'react-icons/fa'
 import { HiMenuAlt3, HiX } from 'react-icons/hi'
+import { UserButton } from '@clerk/nextjs' 
 
 const navItems = [
   { name: 'Home', href: '/' },
@@ -17,7 +19,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-gray-900 text-white">
+    <nav className="bg-transparent border-b border-gray-700 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
@@ -26,7 +28,9 @@ export default function Navbar() {
               <span className="ml-2 text-xl font-bold">FitPulse</span>
             </Link>
           </div>
-          <div className="hidden md:block">
+
+          {/* Desktop Menu and UserButton */}
+          <div className="hidden md:flex items-center space-x-4">
             <div className="ml-10 flex items-baseline space-x-4">
               {navItems.map((item) => (
                 <Link
@@ -38,9 +42,14 @@ export default function Navbar() {
                 </Link>
               ))}
             </div>
+            {/* UserButton from Clerk */}
+            <UserButton afterSignOutUrl="/" />
           </div>
-         
-          <div className="md:hidden">
+
+          {/* Mobile menu button */}
+          <div className="md:hidden flex items-center space-x-4">
+            {/* UserButton for mobile view */}
+            <UserButton afterSignOutUrl="/" />
             <button
               onClick={() => setIsOpen(!isOpen)}
               className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-gray-700 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
