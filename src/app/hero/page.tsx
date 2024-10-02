@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export default function HeroPage() {
   return (
-    <div className="min-h-screen bg-black flex items-center justify-center px-4 sm:px-6 lg:px-8">
+    <div className="min-h-screen bg-transparent mt-14 md:mt-0 flex items-center justify-center px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl w-full space-y-8">
         <div className="flex flex-col lg:flex-row items-center justify-between">
           <div className="w-full lg:w-1/2 text-center lg:text-left mb-8 lg:mb-0">

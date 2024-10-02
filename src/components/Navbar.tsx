@@ -8,7 +8,6 @@ import { HiMenuAlt3, HiX } from 'react-icons/hi'
 import { UserButton } from '@clerk/nextjs' 
 
 const navItems = [
-  { name: 'Home', href: '/' },
   { name: 'Classes', href: '/classes' },
   { name: 'Trainers', href: '/trainers' },
   { name: 'Membership', href: '/membership' },
@@ -19,7 +18,7 @@ export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false)
 
   return (
-    <nav className="bg-transparent border-b border-gray-700 text-white">
+    <nav className="bg-transparent border-b border-gray-800 text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
