@@ -10,7 +10,7 @@ import { UserButton } from '@clerk/nextjs'
 const navItems = [
   { name: 'Classes', href: '/classes' },
   { name: 'Trainers', href: '/trainers' },
-  { name: 'Membership', href: '/membership' },
+  { name: 'About Us', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
 

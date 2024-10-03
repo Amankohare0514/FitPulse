@@ -1,11 +1,10 @@
+
+import { Facebook, Instagram, Twitter, Youtube, Dumbbell, Heart } from "lucide-react"
 import Link from "next/link"
-import { Input } from "@/components/ui/input"
-import { Button } from "@/components/ui/button"
-import { Facebook, Instagram, Twitter, Youtube, Dumbbell, Heart, Running } from "lucide-react"
 
 function Footer() {
   return (
-    <footer className="bg-gray-900 text-gray-300">
+    <footer className="bg-transparent border-t border-gray-800 text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
@@ -45,14 +44,14 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-white">Newsletter</h3>
             <p className="text-sm mb-4">Stay up to date with our latest news and products.</p>
             <form className="space-y-2">
-              <Input 
+              <input 
                 type="email" 
                 placeholder="Your email" 
-                className="bg-gray-800 border-gray-700 text-white placeholder-gray-400"
+                className="bg-gray-800 px-4 w-full py-1 text-center rounded-md border-gray-700 text-white placeholder-gray-400"
               />
-              <Button type="submit" className="w-full bg-primary hover:bg-primary-dark">
+              <button type="submit" className="w-full px-4 py-1 bg-gray-900 hover:bg-primary-dark">
                 Subscribe
-              </Button>
+              </button>
             </form>
           </div>
         </div>
@@ -62,13 +61,6 @@ function Footer() {
             <Link href="#" className="text-sm hover:text-white">Privacy Policy</Link>
             <Link href="#" className="text-sm hover:text-white">Terms of Service</Link>
           </div>
-        </div>
-      </div>
-      <div className="bg-gray-800 py-4">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex justify-center items-center space-x-4 text-sm">
-          <span className="flex items-center"><Heart className="mr-1" /> Stay Healthy</span>
-          <span className="flex items-center"><Running className="mr-1" /> Stay Active</span>
-          <span className="flex items-center"><Dumbbell className="mr-1" /> Stay Strong</span>
         </div>
       </div>
     </footer>
