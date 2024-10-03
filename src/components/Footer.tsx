@@ -24,17 +24,17 @@ function Footer() {
             <h3 className="text-lg font-semibold mb-4 text-white">Quick Links</h3>
             <ul className="space-y-2">
               <li><Link href="#" className="hover:text-white">Home</Link></li>
-              <li><Link href="#" className="hover:text-white">About Us</Link></li>
-              <li><Link href="#" className="hover:text-white">Classes</Link></li>
-              <li><Link href="#" className="hover:text-white">Trainers</Link></li>
-              <li><Link href="#" className="hover:text-white">Contact</Link></li>
+              <li><Link href="/about" className="hover:text-white">About Us</Link></li>
+              <li><Link href="/classes" className="hover:text-white">Classes</Link></li>
+              <li><Link href="/trainers" className="hover:text-white">Trainers</Link></li>
+              <li><Link href="/contact" className="hover:text-white">Contact</Link></li>
             </ul>
           </div>
           <div>
             <h3 className="text-lg font-semibold mb-4 text-white">Services</h3>
             <ul className="space-y-2">
-              <li><Link href="#" className="hover:text-white">Personal Training</Link></li>
-              <li><Link href="#" className="hover:text-white">Group Classes</Link></li>
+              <li><Link href="/trainers" className="hover:text-white">Personal Training</Link></li>
+              <li><Link href="/classes" className="hover:text-white">Group Classes</Link></li>
               <li><Link href="#" className="hover:text-white">Nutrition Planning</Link></li>
               <li><Link href="#" className="hover:text-white">Fitness Assessment</Link></li>
               <li><Link href="#" className="hover:text-white">Online Coaching</Link></li>

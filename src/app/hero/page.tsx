@@ -20,12 +20,12 @@ export default function HeroPage() {
             </p>
             <div className="mt-5 sm:mt-8 sm:flex sm:justify-center lg:justify-start">
               <div className="rounded-md shadow">
-                <Link href="/signup" className="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-black bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 md:py-2 md:text-lg md:px-8 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
+                <Link href="/" className="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-black bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 md:py-2 md:text-lg md:px-8 transition duration-300 ease-in-out transform hover:-translate-y-1 hover:scale-105">
                   Get Started
                 </Link>
               </div>
               <div className="mt-3 sm:mt-0 sm:ml-3">
-                <Link href="/programs" className="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-gray-200 bg-gray-800 hover:bg-gray-700 md:py-2 md:text-lg md:px-8 transition duration-300 ease-in-out">
+                <Link href="/classes" className="w-full flex items-center justify-center px-6 py-2 border border-transparent text-base font-medium rounded-md text-gray-200 bg-gray-800 hover:bg-gray-700 md:py-2 md:text-lg md:px-8 transition duration-300 ease-in-out">
                   View Classes
                 </Link>
               </div>
