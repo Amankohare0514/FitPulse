@@ -81,21 +81,6 @@ export default function AboutUs() {
             </div>
           </div>
         </section>
-
-        {/* Call to Action */}
-        <section className="py-16 px-4 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-6">Ready to Start Your Fitness Journey?</h2>
-            <p className="text-xl mb-8">Join FitPulse today and transform your life with our expert-led programs and supportive community.</p>
-            <Link
-              href="/"
-              className="inline-flex items-center px-6 py-3 text-lg font-semibold bg-white text-blue-600 rounded-full hover:bg-gray-100 transition duration-300"
-            >
-              Get Started
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </div>
-        </section>
       </main>
     </div>
   )
